@@ -1,11 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'home/styles.css' %}">
     <title>DropX - Home</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to DropX</h1>
+            <h1 id="Drop-X"></h1>
+
+            <script src="{% static 'home/script.js' %}"></script>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -46,5 +50,6 @@
     <footer>
         <p>&copy; 2024 DropX. All rights reserved.</p>
     </footer>
+    <script src="{% static 'home/script.js' %}"></script>
 </body>
 </html>
