@@ -1,13 +1,9 @@
-var i = 0;
-var txt = 'Drop X'; // The text
-var speed = 100; // Speed of typing in milliseconds
+const navbar = document.getElementById('navbar');
 
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("Drop-X").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
+navbar.addEventListener('mouseover', function() {
+  navbar.style.top = '0';
+});
 
-window.onload = typeWriter;
+navbar.addEventListener('mouseout', function() {
+  navbar.style.top = '-70px';
+});
